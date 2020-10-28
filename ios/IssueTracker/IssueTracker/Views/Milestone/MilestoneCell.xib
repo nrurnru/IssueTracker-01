@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,15 +11,69 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MilestoneCell" customModule="IssueTracker" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="519" height="130"/>
+            <rect key="frame" x="0.0" y="0.0" width="472" height="114"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="519" height="130"/>
+                <rect key="frame" x="0.0" y="0.0" width="472" height="114"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9g-5g-w4O">
-                        <rect key="frame" x="0.0" y="0.0" width="519" height="130"/>
+                        <rect key="frame" x="0.0" y="0.0" width="472" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스프린트2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22H-5y-nhd">
+                                <rect key="frame" x="16" y="18" width="73" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="이번 배포를 위한 스프린트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbJ-os-Zyl">
+                                <rect key="frame" x="16" y="73.5" width="381.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 open" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJ6-ZF-FVe">
+                                <rect key="frame" x="416" y="54" width="48" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 closed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z69-Fs-ewc">
+                                <rect key="frame" x="405.5" y="76" width="58.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTt-C0-Wqz">
+                                <rect key="frame" x="428" y="18" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0000년 0월 0일까지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhz-oF-iNh">
+                                <rect key="frame" x="109" y="18" width="311" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jbJ-os-Zyl" firstAttribute="leading" secondItem="P9g-5g-w4O" secondAttribute="leading" constant="16" id="6A3-hq-hXl"/>
+                            <constraint firstAttribute="bottom" secondItem="z69-Fs-ewc" secondAttribute="bottom" constant="20" id="8JL-EY-b2z"/>
+                            <constraint firstItem="z69-Fs-ewc" firstAttribute="top" secondItem="IJ6-ZF-FVe" secondAttribute="bottom" constant="4" id="CMo-Zq-QMf"/>
+                            <constraint firstItem="z69-Fs-ewc" firstAttribute="trailing" secondItem="mTt-C0-Wqz" secondAttribute="trailing" id="Fhr-On-Irw"/>
+                            <constraint firstItem="mTt-C0-Wqz" firstAttribute="top" secondItem="P9g-5g-w4O" secondAttribute="top" constant="18" id="HUq-rl-AXm"/>
+                            <constraint firstItem="z69-Fs-ewc" firstAttribute="leading" secondItem="jbJ-os-Zyl" secondAttribute="trailing" constant="8" id="JFV-Oe-GYl"/>
+                            <constraint firstItem="hhz-oF-iNh" firstAttribute="top" secondItem="22H-5y-nhd" secondAttribute="top" id="MVP-cF-bgn"/>
+                            <constraint firstItem="mTt-C0-Wqz" firstAttribute="leading" secondItem="hhz-oF-iNh" secondAttribute="trailing" constant="8" id="OLW-SL-4Mx"/>
+                            <constraint firstItem="hhz-oF-iNh" firstAttribute="leading" secondItem="22H-5y-nhd" secondAttribute="trailing" constant="20" id="XFT-Iw-8Sx"/>
+                            <constraint firstItem="22H-5y-nhd" firstAttribute="top" secondItem="P9g-5g-w4O" secondAttribute="top" constant="18" id="bG7-Uf-mTF"/>
+                            <constraint firstAttribute="trailing" secondItem="mTt-C0-Wqz" secondAttribute="trailing" constant="8" id="d5t-q6-WlZ"/>
+                            <constraint firstAttribute="bottom" secondItem="jbJ-os-Zyl" secondAttribute="bottom" constant="20" symbolic="YES" id="fAD-KR-g9w"/>
+                            <constraint firstItem="IJ6-ZF-FVe" firstAttribute="trailing" secondItem="mTt-C0-Wqz" secondAttribute="trailing" id="pj6-sb-WFV"/>
+                            <constraint firstItem="22H-5y-nhd" firstAttribute="leading" secondItem="P9g-5g-w4O" secondAttribute="leading" constant="16" id="rFo-P9-fDe"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -30,13 +84,27 @@
                 <constraint firstAttribute="bottom" secondItem="P9g-5g-w4O" secondAttribute="bottom" id="o9z-JI-dFQ"/>
                 <constraint firstItem="P9g-5g-w4O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zAS-Yp-Ku9"/>
             </constraints>
-            <size key="customSize" width="519" height="130"/>
-            <point key="canvasLocation" x="351.44927536231887" y="167.41071428571428"/>
+            <size key="customSize" width="472" height="114"/>
+            <connections>
+                <outlet property="closedIssue" destination="z69-Fs-ewc" id="Ecl-tW-JDg"/>
+                <outlet property="completePercentage" destination="mTt-C0-Wqz" id="8BE-1O-j6U"/>
+                <outlet property="description" destination="jbJ-os-Zyl" id="xuV-Ir-ulL"/>
+                <outlet property="dueDate" destination="hhz-oF-iNh" id="jMA-jA-w2s"/>
+                <outlet property="openIssue" destination="IJ6-ZF-FVe" id="N1I-Y0-8i3"/>
+                <outlet property="title" destination="22H-5y-nhd" id="xHU-K1-mpD"/>
+            </connections>
+            <point key="canvasLocation" x="317.39130434782612" y="162.05357142857142"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
