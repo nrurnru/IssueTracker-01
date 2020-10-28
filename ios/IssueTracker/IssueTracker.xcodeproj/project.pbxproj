@@ -19,6 +19,8 @@
 		0DA6EDF52547D67D009EA88F /* IssueTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6EDF42547D67D009EA88F /* IssueTrackerTests.swift */; };
 		0DA6EE002547D67D009EA88F /* IssueTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6EDFF2547D67D009EA88F /* IssueTrackerUITests.swift */; };
 		0DB84C942549308C000B6651 /* GithubLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB84C932549308C000B6651 /* GithubLoginManager.swift */; };
+		0DB84CC125495BD1000B6651 /* MilestoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB84CBF25495BD1000B6651 /* MilestoneCell.swift */; };
+		0DB84CC225495BD1000B6651 /* MilestoneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DB84CC025495BD1000B6651 /* MilestoneCell.xib */; };
 		1D41EF98D8AD5662DAF8E5E8 /* libPods-IssueTracker-IssueTrackerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A64833F0ACC622329624F531 /* libPods-IssueTracker-IssueTrackerUITests.a */; };
 		2A3273415820EBEE918C6BBB /* libPods-IssueTrackerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A7652936AE065428E1110A3 /* libPods-IssueTrackerTests.a */; };
 		5C6DB9C31F7429A6C6E6C11E /* libPods-IssueTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E034FD863700386FD8006D2D /* libPods-IssueTracker.a */; };
@@ -61,6 +63,8 @@
 		0DA6EDFF2547D67D009EA88F /* IssueTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTrackerUITests.swift; sourceTree = "<group>"; };
 		0DA6EE012547D67D009EA88F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB84C932549308C000B6651 /* GithubLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubLoginManager.swift; sourceTree = "<group>"; };
+		0DB84CBF25495BD1000B6651 /* MilestoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneCell.swift; sourceTree = "<group>"; };
+		0DB84CC025495BD1000B6651 /* MilestoneCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MilestoneCell.xib; sourceTree = "<group>"; };
 		4A7652936AE065428E1110A3 /* libPods-IssueTrackerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IssueTrackerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB2F18A4D0EF2AA5045315E /* Pods-IssueTracker-IssueTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IssueTracker-IssueTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-IssueTracker-IssueTrackerUITests/Pods-IssueTracker-IssueTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A64833F0ACC622329624F531 /* libPods-IssueTracker-IssueTrackerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IssueTracker-IssueTrackerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,7 @@
 		0D356E072547E796008F2704 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0DB84CBB25495B65000B6651 /* Milestone */,
 				0D356E022547E790008F2704 /* UIView+CornerRadius.swift */,
 			);
 			path = Views;
@@ -179,6 +184,15 @@
 				0DB84C932549308C000B6651 /* GithubLoginManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0DB84CBB25495B65000B6651 /* Milestone */ = {
+			isa = PBXGroup;
+			children = (
+				0DB84CBF25495BD1000B6651 /* MilestoneCell.swift */,
+				0DB84CC025495BD1000B6651 /* MilestoneCell.xib */,
+			);
+			path = Milestone;
 			sourceTree = "<group>";
 		};
 		68A4FCDFE1A684B269B4E306 /* Pods */ = {
@@ -313,6 +327,7 @@
 			files = (
 				0D7D23552547F9670012C943 /* .swiftlint.yml in Resources */,
 				0DA6EDEA2547D67D009EA88F /* LaunchScreen.storyboard in Resources */,
+				0DB84CC225495BD1000B6651 /* MilestoneCell.xib in Resources */,
 				0DA6EDE72547D67D009EA88F /* Assets.xcassets in Resources */,
 				0DA6EDE52547D67C009EA88F /* Main.storyboard in Resources */,
 			);
@@ -427,6 +442,7 @@
 			files = (
 				0DA6EDE22547D67C009EA88F /* LoginViewController.swift in Sources */,
 				0D356E032547E790008F2704 /* UIView+CornerRadius.swift in Sources */,
+				0DB84CC125495BD1000B6651 /* MilestoneCell.swift in Sources */,
 				0DA6EDDE2547D67C009EA88F /* AppDelegate.swift in Sources */,
 				0DA6EDE02547D67C009EA88F /* SceneDelegate.swift in Sources */,
 				0DB84C942549308C000B6651 /* GithubLoginManager.swift in Sources */,
