@@ -325,7 +325,9 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="tIl-e2-Cnl" firstAttribute="bottom" secondItem="7Kx-un-OR5" secondAttribute="bottomMargin" id="5EO-Rw-TzI"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="tIl-e2-Cnl" secondAttribute="trailing" constant="10" id="dwY-rc-h15"/>
                                         <constraint firstItem="tIl-e2-Cnl" firstAttribute="leading" secondItem="7Kx-un-OR5" secondAttribute="leadingMargin" id="jEa-sf-FtK"/>
+                                        <constraint firstItem="tIl-e2-Cnl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Kx-un-OR5" secondAttribute="topMargin" constant="10" id="k8O-Ge-qea"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="titleLabel" destination="tIl-e2-Cnl" id="H36-QT-taf"/>
