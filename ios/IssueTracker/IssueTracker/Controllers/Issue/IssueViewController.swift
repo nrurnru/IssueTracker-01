@@ -90,7 +90,7 @@ extension IssueViewController: UICollectionViewDelegate {
     private func configureFlowLayout() {
         guard let layout = collectionView?.collectionViewLayout as? UICollectionViewFlowLayout else { return }
         layout.sectionHeadersPinToVisibleBounds = true
-        layout.itemSize.width = view.frame.width
+        layout.itemSize.width = 20
     }
     
     private func setButtonModes(isEditing: Bool) {
